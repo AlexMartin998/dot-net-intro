@@ -1,0 +1,63 @@
+# Visual Studio
+.vs/
+.vs/*
+
+# Rider
+.idea/
+.idea/*
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+Generated\ Files/
+
+# Build results
+bin/
+obj/
+
+# NuGet packages
+*.nupkg
+# The packages folder can be ignored because of PackageReference
+**/packages/*
+# except build/ because of project.json
+!**/packages/build/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# EF Core migrations - ¡no ignores! (ver más abajo)
+
+# Local DB files
+*.mdf
+*.ldf
+
+# Publish output
+publish/
+*.Publish.xml
+
+# IIS Express
+/.vs/
+*.vspscc
+*.[Pp]ublish.xml
+
+# Rider caches
+.cache/
+.idea/
+
+# User secrets (if usas Secret Manager)
+secrets.json
+
+# Logs
+logs/
+*.log
+
+# npm/yarn
+node_modules/
+
+# Linux/macOS files
+.DS_Store
+Thumbs.db

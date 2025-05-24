@@ -18,14 +18,15 @@ public class ProductsController : ControllerBase
     }
 
     // GET: api/products
-    [HttpGet]
+    [HttpGet(Name = "GetAllProducts")] 
     public ActionResult<IEnumerable<Product>> Get()
     {
         return Ok(_repository.GetAll());
     }
 
     // GET api/products/5
-    [HttpGet("{id}")]
+    [HttpGet("{id}", Name = "GetProductById")] 
+    // [AllowAnonymous] // lo hace free
     public ActionResult<Product> Get(int id)
     {
         var product = _repository.GetById(id);
